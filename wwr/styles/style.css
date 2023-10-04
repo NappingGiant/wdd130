@@ -1,0 +1,151 @@
+
+/* bring in the font from the previous lesson */
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Noto+Sans&display=swap');
+
+
+:root {
+  
+    /* https://coolors.co/e91515-dbbea1-3f292b-00a7e1-009b72 */
+    --primary-color: #e91515;
+    --secondary-color: #3f292b;
+    --accent1-color: #dbbea1;
+    --accent2-color: #009b72;
+    --header-bg-color: #00a7e1;
+    --header-bg-color7: rgba(0, 167, 225, 0.7);
+    --header-weight: 400; /* not sure what the default weight was, but it was ugly not the same as it showed on fonts.google.com */
+    --bg-color: #a6ccd9; /* unsaturated --header-color NEEDS WORK */
+  
+    --heading-font: "Akronim";
+    --paragraph-font: "Noto Sans", Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--header-bg-color); /* #396E94;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: var(--header-bg-color); /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: var(--header-bg-color); 
+    --nav-link-color: var(--secondary-color); /*#00a7e1; */
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--secondary-color); 
+  }
+  
+/* Start of w04 activity */
+
+body {
+    background-color: transparent;
+    font-family: var(--paragraph-font);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 48px;
+    font-weight: var(--header-weight);
+}
+h2 {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    font-weight: var(--header-weight);
+}
+h3 {
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: var(--header-weight);
+}
+h4 {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: var(--header-weight);
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+header {
+    background-color: var(--header-bg-color7);
+    /* opacity: 0.7; changes the text as well :( */
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+.home-title {
+    color: var(--paragraph-color-on-color);
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+.book, .join {
+    color: var(--nav-link-color);
+    background-color: var(--bg-color);
+    text-decoration: none;
+}
+
+.book:hover, .join:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+#background {
+    background-color: var(--bg-color);
+}
+
+.msg {
+    background-color: var(--bg-color);
+}
+.msg h2 {
+    color: var(--paragraph-color-on-color);
+}
+.msg p {
+    color: var(--paragraph-color-on-color);
+}
+
+footer {
+    color: var(--paragraph-color-on-color);
+    background-color: var(--bg-color);
+}
+
+footer a {
+    color: var(--nav-link-color);
+    background-color: var(--bg-color);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
