@@ -1,0 +1,25 @@
+
+body {
+    max-width: 750px;
+}
+
+.img-top {
+    max-width:750px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.img-circle {
+    max-width: 135px;
+    border: 8px solid #404040;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 25px 30px 25px 30px;
+}
+
+.div-grey {
+    background-color: grey;
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
