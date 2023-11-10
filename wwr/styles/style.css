@@ -27,8 +27,8 @@
     --paragraph-background-color: var(--header-bg-color); 
     --nav-link-color: var(--accent1-color); /*#00a7e1; */
     --nav-background-color: var(--secondary-color);
-    --nav-hover-link-color: var(--accent1-color);
-    --nav-hover-background-color: var(--primary-color); 
+    --nav-hover-link-color: var(--secondary-color); /*var(--accent1-color);*/
+    --nav-hover-background-color: var(--accent2-color);/* var(--primary-color); */
   }
   
 /* Start of w04 activity */
@@ -36,7 +36,7 @@
 body {
     background-color: transparent;
     font-family: var(--paragraph-font);
-    font-size: 22px; /* Ugh...w05 lesson, maybe too large */
+    font-size: 1.2em; /*font-size: 22px; */ /* Ugh...w05 lesson, maybe too large */
     margin: 0;
     padding: 0;
 }
@@ -230,7 +230,7 @@ footer {
     color: var(--paragraph-color-on-color);
     background-color: var(--bg-color);
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 2rem; /*50px;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -256,7 +256,64 @@ footer .socal img {
     padding-top: 15px;
 }
 
-/*--- w07 07 THIS MUST BE LAST: DON'T ADD ANYTHING BELOW ---*/
+/* === FAQ PAGE === */
+.faq-body {
+    background-color: transparent;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.faq-body nav a {
+    color: var(--secondary-color);
+}
+.faq-body .intro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px 50px;
+}
+.faq-body .intro-text {
+    grid-column: 1/2;
+    margin-right: 50px;
+}
+.faq-body .intro-img img {
+    grid-column: 2/3;
+    width: 100%;
+    padding: 20px;
+}
+
+/* from https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+    background-color: var(--nav-background-color); /*#eee;*/
+    color: var(--nav-link-color); /*#444;*/
+    font-size: 1.3em;
+    margin: 2px 0px;
+    cursor:help;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: var(--nav-hover-background-color); /*#ccc;*/
+    color: var(--nav-hover-link-color);
+ 
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+
+/* === w07 07 THIS MUST BE LAST: DON'T ADD ANYTHING BELOW === */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -295,6 +352,7 @@ footer .socal img {
         margin: 0 auto;
     }
     footer {
-        margin-top: 25px;
+        margin-top: 5px;
     }
 }
+
