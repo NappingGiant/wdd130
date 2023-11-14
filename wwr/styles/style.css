@@ -331,7 +331,7 @@ footer .socal img {
 form {
     /* Center the form on the page */
     margin: 20px auto;
-    width: 400px;
+    width: 420px;
     /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
@@ -350,7 +350,7 @@ ul {
   label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 90px;
+    width: 100px;
     text-align: right;
   }
   
@@ -384,7 +384,7 @@ ul {
   
   .button {
     /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
+    padding-left: 100px; /* same size as the label elements */
   }
   
   button {
