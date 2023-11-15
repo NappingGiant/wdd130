@@ -1,0 +1,12 @@
+
+What did you learn from the websites on careers in web design and development?
+
+From the listings, it appears that a significant number of skills are needed in site developer tools: HTML, Java, PHP, JSP, ASP.NET, Python, and AJAX were mentioned, and I’m aware of others that are used (i.e., Django, node.js). Although these weren’t necessarily listed as requirements for entry-level jobs, they are required for career advancement as an e-commerce site developer. That said, it appears that advancement in the field could be fairly rapid, almost doubling in four to seven years. The pay is pretty good, as well!
+
+
+What did you learn from this class in general?
+
+CSS is a powerful tool! I learned basic HTML when the web was still new, and the capabilities that CSS provides has changed most of my assumptions about how to design a web site. Also, based on a browsing of the W3schools.com HOW-TO section that was recommended in the lesson it appears that the use of Javascript is common even in the simplest of sites even with the capabilities of CSS. I also learned the importance of color. I struggled to get colors that worked well together, even with the sites and tools that were provided. This class has already helped me considerably in creating a useful site at one of the places I volunteer.
+
+
+Word Count: 240 (including the 36 words that are in the questions and in this comment)
