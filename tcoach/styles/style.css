@@ -34,7 +34,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    font-size: 16px;
+    font-size: 16px;    
     background-color: var(--paragraph-background-color);    
     color: var(--paragraph-color-on-white);
     font-family: var(--paragraph-font);
@@ -151,7 +151,7 @@ footer {
 .about-grid {
     display: grid;
     grid-template-columns: 20% 40% 40%;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
 }
 .about-grid .headshot-img {
     grid-row: 1/2;
@@ -234,46 +234,73 @@ footer {
 /* Home page */
 #hero {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    
+    grid-template-columns: 100%;
+    grid-template-rows: 4rem auto auto;
 }
-#hero img {
+#hero-img {
+    grid-column: 1/2;
+    grid-row: 1/4;
     width: 100%;
     margin: 0;
     padding: 0;
     opacity: 20%;
 }
 #hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
+    grid-column: 1/2;
+    grid-row: 1/4 ;
     z-index: -1;
 }
-#hero-msg {
-    grid-column: 1/4;
+#hero-text {
+    grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 10px;
 }
-#hero-msg h1, #hero-msg p {
+#hero h1, p {
     text-align: center;
     color: var(--headline-color-on-white);
     text-shadow: black 0 0 4px;
 }
-#hero-msg h1 {
+#hero h1 {
     font-size: 72px;
 }
-#hero-msg p {
+#hero p {
     font-size: 54px;
 }
+#hero #hero-button {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: last baseline;
+}
+
+
 
 .home-main1 {
-    clear: both;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-.home-main1 img {
-    float: left;
+/*#hero img:nth-of-type(2) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.home-main1 img:nth-of-type(3) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    z-index: 1;
+}
+.home-main1 a {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: last baseline;
+    margin: 5px;
     width: 50%;
+    min-width: 120px;
+    max-width: 160px;
+}
+.home-main1 p{
+    grid-column: 2/3;
 }
 .home-main2 {
     clear: both;
     
-}
-
+}*/
