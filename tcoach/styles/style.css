@@ -254,16 +254,17 @@ footer {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-#hero h1, p {
+#hero-text h1, #hero-text p {
     text-align: center;
-    color: var(--headline-color-on-white);
-    text-shadow: black 0 0 4px;
 }
-#hero h1 {
+#hero-text h1 {
     font-size: 72px;
+    color: var(--headline-color-on-white);
+    text-shadow: black 0 0 5px;
 }
-#hero p {
-    font-size: 54px;
+#hero-text p {
+    font-size: 60px;
+    padding-top: 2rem;
 }
 #hero #hero-button {
     grid-column: 1/2;
@@ -272,35 +273,40 @@ footer {
     align-self: last baseline;
 }
 
-
+main {
+    color: var(--paragraph-color-on-white);
+}
 
 .home-main1 {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-/*#hero img:nth-of-type(2) {
-    grid-row: 4/5;
-    grid-column: 1/2;
-}
-.home-main1 img:nth-of-type(3) {
-    grid-row: 4/5;
-    grid-column: 1/2;
-    z-index: 1;
-}
-.home-main1 a {
-    grid-column: 1/2;
+.home-main1 .img1 {
     grid-row: 1/2;
+    grid-column: 1/2;
+    width: 100%;
+    align-self: last baseline;
+    margin: 20px 0;
+    padding: 0;
+}
+.home-main1 .main1-button {  
+    grid-row: 1/2;
+    grid-column: 1/2;
     justify-self: center;
     align-self: last baseline;
-    margin: 5px;
-    width: 50%;
-    min-width: 120px;
-    max-width: 160px;
+    z-index: 1;
 }
-.home-main1 p{
+.home-main1-intro {
+    grid-row: 1/2;
     grid-column: 2/3;
+    margin: 20px 0;
 }
+
 .home-main2 {
-    clear: both;
-    
-}*/
+    display: flex;
+}
+.home-main2 h4 {
+    font-weight: bold;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+}
