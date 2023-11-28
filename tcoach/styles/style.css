@@ -136,13 +136,14 @@ footer {
     display: grid;
     grid-template-columns: auto 70px;
     margin: 5px 0;
-    padding: 0;
+    padding: 10px;
     text-align: center;
     color: var(--paragraph-color-on-white);
     background-color: var(--secondary-color);
 }
 .social {
     display: flex;
+    font-size: xx-large;
 }
 .social img {
     max-width: 30px;
