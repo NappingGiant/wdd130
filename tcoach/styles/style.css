@@ -81,7 +81,7 @@ header {
     display: grid;
     grid-template-columns: 300px 900px;
     grid-template-rows: auto auto;
-    color: var(--headline-color-on-color);
+    /*color: var(--headline-color-on-color);*/
     background-color:  var(--paragraph-background-color);
     position: fixed;
     z-index: 99;
