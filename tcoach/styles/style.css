@@ -191,7 +191,7 @@ footer {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
-    margin: 0 30px;
+    margin: 0 10%;
 }
 #hero #hero-button {
     grid-column: 1/2;
